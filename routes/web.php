@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/usuario/create', [UsuarioController::class, 'create']); 
+Route::get('/user/create', [UsuarioController::class, 'create']); 
 
-Route::post('/usuario', [UsuarioController::class, 'store'])->name('create');
+Route::post('/user', [UsuarioController::class, 'store'])->name('create');
 
-Route::get('/teacher', [UsuarioController::class, 'index'])->name('index');
+Route::get('/user', [UsuarioController::class, 'index'])->name('index');
